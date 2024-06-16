@@ -1,0 +1,24 @@
+import React from 'react'
+import NavItem from "./NavItem";
+import { navItems } from "./NavItems";
+import ResumeButton from "./ResumeButton";
+import "./Nav.css";
+
+function Nav({ setClicked, clicked }) {
+  return (
+    <nav className={`Nav ${clicked ? "active" : ""}`}>
+      {navItems.map((item) => (
+        <NavItem
+          setClicked={setClicked}
+          clicked={clicked}
+          name={item.name}
+          link={item.link}
+        />
+      ))}
+      
+      <ResumeButton />
+    </nav>
+  );
+}
+
+export default Nav;

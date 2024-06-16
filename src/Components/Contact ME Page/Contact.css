@@ -1,0 +1,62 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 66vh;  
+  background-color: #250821;
+  background-image: linear-gradient(315deg,#250821 0%, #250821 74%);
+  position: relative;
+}
+
+.contact__body {
+  max-width: 50vw;
+  padding-top: 10vh;
+  padding-left: 10vw;
+}
+
+.contact__option {
+  display: flex;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.contact__text {
+  color: var(--dark-gray);
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.linktosite {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.linktosite:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.contact__logo {
+  color: var(--purple);
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    align-items: center;
+  }
+
+  .contact__heading {
+    font-size: 48px;
+  }
+
+  .contact__body {
+    max-width: 80vw;
+    padding-left: 0;
+  }
+
+  .contact__text {
+    font-size: 24px;
+  }
+}

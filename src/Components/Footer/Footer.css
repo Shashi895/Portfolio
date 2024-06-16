@@ -1,0 +1,12 @@
+.footer {
+  height: 27.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer__copyright {
+  font-size: 12px;
+}

@@ -1,0 +1,92 @@
+.about {
+  display: flex;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  justify-content: center;
+  height: 85vh;
+  background: linear-gradient(
+    90deg,
+    rgba(18, 19, 20, 1) 0%,
+    rgba(34, 38, 43, 1) 59%,
+    rgba(49, 54, 59, 1) 100%
+  );
+  position: relative;
+  color: rgb(190, 190, 190);
+}
+.about__heading span{
+  font-size: 60px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__body {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  max-width: 50vw;
+  padding-right: 50px;
+}
+
+.skills__heading {
+  font-size: 20px;
+  color:white;
+}
+
+.skills-column p {
+  word-break: break-word;
+}
+/* You may also need media queries to stack the columns into a single column on smaller screens */
+
+.about__headshot {
+  border-radius: 50%;
+  border: 5px solid var(--purple);
+  box-shadow: var(--purple) 0px 20px 30px -10px;
+}
+
+.about__specialText {
+  /* highlight the special text */
+  color: white;
+}
+
+.about__externLink {
+  color: var(--purple);
+}
+
+
+@media only screen and (max-width: 768px) {
+  .about {
+    padding-top: 20vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  .about__text {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .about__body {
+    padding-right: 0;
+    max-width: 80vw;
+    padding-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .about__headshot {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 25vh;
+    margin-top: 15px;
+  }
+}
+
+.about__heading span{
+  font-size: 48px;
+}
+
+.skills__heading {
+  font-size: 20px;
+}
